@@ -269,8 +269,8 @@ footer p:nth-of-type(2) {
         display: flex;
     }
 
-    nav .vet-image {
-        justify-content: center;
+    nav .vet-image img {
+        width: 50%;
     }
 
     nav .nav-options {
@@ -278,6 +278,27 @@ footer p:nth-of-type(2) {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
+
+    .left img {
+        width: 100%;
+        align-self: center;
+    }
+    
+    .right img {
+        width: 100%;
+        align-self: center;
+    }
+
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .frame:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
 
 }
