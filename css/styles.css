@@ -140,3 +140,22 @@ nav li a:hover {
     margin: 0;
     padding: 0;
 }
+
+/* ------------------------- Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    background-color: black;
+    color: gray;
+    font-size: 1em;
+}
+
+footer p {
+    padding: 5px 15px;
+}
+
+footer p:nth-of-type(2) {
+    text-align: end;
+}
