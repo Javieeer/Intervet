@@ -6,27 +6,45 @@ html, body {
 }
 
 nav {
-    display: flex;
-    background-color: #7acc2d;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #6699FF;
     padding: 10px;
     color: white;
     justify-content: space-between;
     align-content: center;
+    text-align: center;
 }
 
-nav ul {
+nav .vet-image {
+    text-align: start;
     display: flex;
 }
 
+nav .vet-image img {
+    width: 50%;
+}
+
+.nav-options {
+    display: grid;
+    align-content: center;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: end;
+}
+
 nav li {
-    padding-left: 20px;
     font-weight: bold;
     list-style: none;
 }
 
 nav li a {
-    color: gray;
+    color: black;
     text-decoration: none;
+    font-size: 17pt;
 }
 
 nav li a:hover {
@@ -35,26 +53,90 @@ nav li a:hover {
 
 /* ---------------------- Main section */
 
-.main-section {
-    padding: 20%;
+.punch-line {
+    padding: 4%;
     text-align: center;
 }
 
-.products {
+.punch-line h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'open sans';
+}
+
+.where-is {
+    padding: 0 4%;
+}
+
+.where-is h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.where-is p {
+    font-size: 2em;
+}
+
+/* ----------------------- Our team */
+
+.our-team {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas: "left team right";
+}
+
+.left {
     display: flex;
-    background-image: url("../images/curve.png");
-    background-size: cover;
-    background-position: center top;
-    height: 200px;
-    padding: 15%;
+    grid-area: left;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-content: center;
 }
 
-.product {
-    padding: 10px;
+.right {
+    display: flex;
+    grid-area: right;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-content: center;
 }
 
-.product .content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
+.left img {
+    width: 80%;
+    align-self: center;
+}
+
+.right img {
+    width: 80%;
+    align-self: center;
+}
+
+.team-container {
+    grid-area: team;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.frame {
+    text-align: center;
+    text-indent: 10px;
+    text-transform: capitalize;
+    line-height: 5px;
+    font-weight: bold;
+}
+
+.frame .foto {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.frame .foto img{
+    width: 80%;
+    margin: 0;
+    padding: 0;
 }
