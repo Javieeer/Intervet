@@ -215,10 +215,6 @@ footer {
     font-size: 1em;
 }
 
-footer p {
-    padding: 5px 15px;
-}
-
 footer p:nth-of-type(2) {
     text-align: end;
 }
@@ -284,7 +280,7 @@ footer p:nth-of-type(2) {
     /* Hamburguer menu */
 
     .nav-options {
-        position: absolute;
+        position: fixed;
         background-color: rgba(5, 111, 255, .9);
         width: 100vw;
         height: 100vh;
