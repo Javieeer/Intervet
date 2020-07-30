@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?cc146n');
+    src:  url('../fonts/icomoon.eot?cc146n#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?cc146n') format('truetype'),
+      url('../fonts/icomoon.woff?cc146n') format('woff'),
+      url('../fonts/icomoon.svg?cc146n#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Helvetica;
+}
+
+.container-global-1 {
+    width: 100%;
+    background-color: #6699FF;
+}
+
+.container-global-2 {
+    width: 100%;
+    background-color: white;
+}
+
+.container-global-3 {
+    background-color: black;
+    width: 100%;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1440px;
+    margin: auto;
+    width: 90%;
+    background-color: inherit;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+nav .vet-image {
+    display: contents;
+}
+
+nav .vet-image img {
+    width: 70%;
+    align-self: center;
+}
+
+.nav-options {
+    display: grid;
+    align-content: center;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: end;
+}
+
+nav li {
+    font-weight: bold;
+    list-style: none;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    font-size: 17pt;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------- Main section */
+
+.punch-line {
+    display: none;
+    background-color: inherit;
+    max-width: 1440px;
+    margin: auto;
+    width: 90%;
+    padding: 4%;
+    text-align: center;
+}
+
+.punch-line h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'open sans';
+}
+
+.where-is {
+    max-width: 1440px;
+    margin: auto;
+    background-color: inherit;
+    width: 90%;
+    padding: 0 4%;
+    padding-top: 10%;
+}
+
+.where-is h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.where-is p {
+    font-size: 2em;
+}
+
+/* ----------------------- Our team */
+
+.our-team {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas: "left team right";
+}
+
+.left {
+    display: flex;
+    grid-area: left;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.right {
+    display: flex;
+    grid-area: right;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.left img {
+    width: 80%;
+    align-self: center;
+}
+
+.right img {
+    width: 80%;
+    align-self: center;
+}
+
+.team-container {
+    grid-area: team;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.frame {
+    text-align: center;
+    text-indent: 10px;
+    text-transform: capitalize;
+    line-height: 5px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.frame .foto {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.frame .foto img{
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------- Footer */
+
+footer {
+    max-width: 1440px;
+    background-color: inherit;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    color: gray;
+    font-size: 1em;
+}
+
+footer p {
+    padding: 5px 15px;
+}
+
+footer p:nth-of-type(2) {
+    text-align: end;
+}
+
+/* --------------------- Burger menu */
+
+.burger-menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    line-height: 40px;
+    display: none;
+    align-self: center;
+    font-size: 2em;
+}
+
+/* ------------------------- Responsive */
+
+@media screen and (max-width: 1024px) {
+
+    .punch-line h1 {
+        font-size: 2.5em;
+    }
+
+    .where-is h1 {
+        font-size: 2.5em;
+    }
+
+    .where-is p {
+        font-size: 1.5em;
+    }
+
+    .frame .foto img {
+        width: 60%;
+    }
+
+    .frame {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .burger-menu {
+        display: block;
+    }
+    
+    nav {
+        display: flex;
+    }
+
+    nav .vet-image img {
+        width: 50%;
+    }
+
+    nav .nav-options {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .left img {
+        width: 100%;
+        align-self: center;
+    }
+    
+    .right img {
+        width: 100%;
+        align-self: center;
+    }
+
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .frame:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+}
