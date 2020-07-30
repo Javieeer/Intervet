@@ -1,9 +1,9 @@
-const ipad = window.matchMedia('screen and (max-width: 767px)')
-const menu = document.querySelector('.menu');
+const ipad = window.matchMedia('screen and (max-width: 768px)')
+const menu = document.querySelector('.nav-options');
 const burgerButton = document.querySelector('#burger-button');
 
 ipad.addListener(validation)
-
+validation(ipad);
 function validation(event)
 {
   if (event.matches)
@@ -28,3 +28,4 @@ function hideShow()
     menu.classList.add('is-active');
   }
 }
+validation(ipad);

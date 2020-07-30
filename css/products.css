@@ -79,7 +79,7 @@ nav .vet-image img {
     align-content: center;
 }
 
-nav ul {
+nav ol {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: end;
@@ -265,18 +265,56 @@ footer p:nth-of-type(2) {
 
     .burger-menu {
         display: block;
+        margin: 2%;
+        z-index: 2;
     }
     
     nav {
         display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     nav .vet-image img {
         width: 50%;
+        padding: 2%;
     }
 
-    nav .nav-options {
-        display: none;
+    /* Hamburguer menu */
+
+    .nav-options {
+        position: absolute;
+        background-color: rgba(5, 111, 255, .9);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        top: 0;
+        bottom: 0;
+        justify-content: center;
+        left: -100vw;
+        transition: .3s;
+    }
+
+    .nav-options.is-active {
+        left: 0;
+    }
+
+    .nav-options ol {
+        grid-template-columns: 320px;
+        grid-template-rows: repeat(4, 1fr);
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-options li {
+        align-self: center;
+    }
+
+    .nav-options ol li a {
+        font-size: 3em;
+        text-decoration: underline;
+        color: white;
     }
 }
 
