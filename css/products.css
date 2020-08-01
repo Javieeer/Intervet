@@ -232,6 +232,19 @@ footer p:nth-of-type(2) {
     font-size: 2em;
 }
 
+.button-buy {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 2% 15%;
+    border: 1px solid #c1c1c1;
+    background-color: #6699ff;
+}
+
+.button-buy:hover {
+    background-color: #4d76c7;
+}
+
 /* ------------------------- Responsive */
 
 @media screen and (max-width: 1024px) {
