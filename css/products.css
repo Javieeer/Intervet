@@ -29,6 +29,14 @@
     content: "\e900";
   }
 
+/* -------------- Variables */
+
+:root {
+    --blue-color: #6699FF;
+}
+
+/* -------------- Variables */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -38,7 +46,7 @@ html, body {
 
 .container-global-1 {
     width: 100%;
-    background-color: #6699FF;
+    background-color: var(--blue-color);
 }
 
 .container-global-2 {
@@ -63,6 +71,7 @@ nav {
     justify-content: space-between;
     align-content: center;
     text-align: center;
+    height: auto;
 }
 
 nav .vet-image {
@@ -238,11 +247,13 @@ footer p:nth-of-type(2) {
     color: white;
     padding: 2% 15%;
     border: 1px solid #c1c1c1;
-    background-color: #6699ff;
+    background-color: var(--blue-color);
+    border-radius: 5px;
 }
 
 .button-buy:hover {
     background-color: #4d76c7;
+    cursor: pointer;
 }
 
 /* ------------------------- Responsive */

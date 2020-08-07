@@ -57,6 +57,7 @@ nav {
     max-width: 1440px;
     margin: auto;
     width: 90%;
+    height: auto;
     background-color: inherit;
     padding: 10px;
     color: white;
