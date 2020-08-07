@@ -33,6 +33,12 @@
 
 :root {
     --blue-color: #6699FF;
+    --white-color: white;
+    --black-color: black;
+    --gray-color: gray;
+    --hamburger-color: rgba(5, 111, 255, .9);
+    --button-color: #4d76c7;
+    --border-color-button: #c1c1c1;
 }
 
 /* -------------- Variables */
@@ -51,11 +57,11 @@ html, body {
 
 .container-global-2 {
     width: 100%;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 .container-global-3 {
-    background-color: black;
+    background-color: var(--black-color);
     width: 100%;
 }
 
@@ -67,7 +73,7 @@ nav {
     width: 90%;
     background-color: inherit;
     padding: 10px;
-    color: white;
+    color: var(--white-color);
     justify-content: space-between;
     align-content: center;
     text-align: center;
@@ -100,7 +106,7 @@ nav li {
 }
 
 nav li a {
-    color: black;
+    color: var(--black-color);
     text-decoration: none;
     font-size: 17pt;
 }
@@ -219,8 +225,8 @@ footer {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: black;
-    color: gray;
+    background-color: var(--black-color);
+    color: var(--gray-color);
     font-size: 1em;
 }
 
@@ -234,7 +240,7 @@ footer p:nth-of-type(2) {
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 2px solid var(--white-color);
     line-height: 40px;
     display: none;
     align-self: center;
@@ -244,15 +250,15 @@ footer p:nth-of-type(2) {
 .button-buy {
     font-size: 2em;
     font-weight: bold;
-    color: white;
+    color: var(--white-color);
     padding: 2% 15%;
-    border: 1px solid #c1c1c1;
+    border: 1px solid var(--border-color-button);
     background-color: var(--blue-color);
     border-radius: 5px;
 }
 
 .button-buy:hover {
-    background-color: #4d76c7;
+    background-color: var(--button-color);
     cursor: pointer;
 }
 
@@ -305,7 +311,7 @@ footer p:nth-of-type(2) {
 
     .nav-options {
         position: fixed;
-        background-color: rgba(5, 111, 255, .9);
+        background-color: var(--hamburger-color);
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -334,7 +340,7 @@ footer p:nth-of-type(2) {
     .nav-options ol li a {
         font-size: 3em;
         text-decoration: underline;
-        color: white;
+        color: var(--white-color);
     }
 }
 
