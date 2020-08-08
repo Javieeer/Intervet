@@ -516,4 +516,11 @@ footer p:nth-of-type(2) {
         border-radius: 5px;
         cursor: pointer;
     }
+
+    .button-buy {
+        font-size: initial;
+    }
+    .frame {
+        text-indent: initial;
+    }
 }

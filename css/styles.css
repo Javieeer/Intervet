@@ -341,5 +341,7 @@ footer p:nth-of-type(2) {
 }
 
 @media screen and (max-width: 425px) {
-
+    .where-is p {
+        font-size: 1em;
+    }
 }
