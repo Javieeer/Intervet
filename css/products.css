@@ -274,6 +274,8 @@ footer p:nth-of-type(2) {
     display: grid;
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 
 .container .presentation {
