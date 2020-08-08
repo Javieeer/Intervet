@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: grid;
+  background-color: gray;
+}
+
+.container {
+  display: grid;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
+
+img {
+  width: 80%;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0e3c0d;
+  font-weight: bold;
+  font-size: .7em;
+  text-align: center;
+}
