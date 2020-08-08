@@ -39,6 +39,8 @@
     --hamburger-color: rgba(5, 111, 255, .9);
     --button-color: #4d76c7;
     --border-color-button: #c1c1c1;
+    --button-form-sale: #21d444;
+    --box-shadow: 0 0 2px 1px #e6e5e9;
 }
 
 /* -------------- Variables */
@@ -201,6 +203,10 @@ nav li a:hover {
     line-height: 5px;
     font-weight: bold;
     font-size: 1em;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    padding: 1em;
+    margin: 5px;
 }
 
 .frame .foto {
@@ -259,6 +265,78 @@ footer p:nth-of-type(2) {
 
 .button-buy:hover {
     background-color: var(--button-color);
+    cursor: pointer;
+}
+
+/* ------------------------- Sale */
+
+.container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .presentation {
+    width: 50%;
+    display: grid;
+    padding: 1em;
+    justify-self: right;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin: 50px;
+    margin-right: 20px;
+}
+
+.container .presentation h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container .presentation figure {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container figure img {
+    max-width: 80%;
+}
+
+.sale-form {
+    width: 50%;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    justify-self: left;
+    align-self: center;
+}
+
+.sale-form label {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+.sale-form input {
+    height: 30px;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+
+}
+
+.sale-form button {
+    display: block;
+    width: 100%;
+    font-size: 1.5em;
+    height: 40px;
+    background-color: var(--button-form-sale);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -366,5 +444,74 @@ footer p:nth-of-type(2) {
 }
 
 @media screen and (max-width: 425px) {
-
+    .container {
+        display: grid;
+        margin: auto;
+    }
+    
+    .container .presentation {
+        width: 90%;
+        display: grid;
+        box-sizing: border-box;
+        padding: 1em;
+        justify-self: center;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+        margin: 50px;
+        margin-right: 20px;
+    }
+    
+    .container .presentation h1 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .container .presentation figure {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container figure img {
+        max-width: 80%;
+    }
+    
+    .sale-form {
+        width: 90%;
+        padding: 1em;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+        box-sizing: border-box;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .sale-form label {
+        font-size: 1.5em;
+        margin: 0;
+        margin-bottom: .5em;
+    }
+    
+    .sale-form input {
+        height: 30px;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1em;
+    
+    }
+    
+    .sale-form button {
+        display: block;
+        width: 100%;
+        font-size: 1.5em;
+        height: 40px;
+        background-color: var(--button-form-sale);
+        color: var(--white-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }
